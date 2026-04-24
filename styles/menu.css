@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+body {
+    background-color: #fff0f3;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #fff;
+}
+
+.logo { font-size: 24px; font-weight: bold; color: #5a3d3d; }
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { text-decoration: none; color: #333; font-size: 14px; }
+.active { color: #d63384; font-weight: bold; }
+
+/* Banner */
+.menu-banner {
+    background-color: #e6a8b6;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.menu-banner h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 32px;
+}
+
+/* Filter Buttons */
+input[type="radio"] { display: none; }
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 30px 0;
+}
+
+.filter-container label {
+    background: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#all:checked ~ .filter-container .lbl-all,
+#cakes:checked ~ .filter-container .lbl-cakes,
+#cupcakes:checked ~ .filter-container .lbl-cupcakes,
+#cookies:checked ~ .filter-container .lbl-cookies {
+    background-color: #fce4ec;
+    border-color: #f06292;
+}
+
+/* Filter Action */
+.menu-card { display: none; }
+
+#all:checked ~ .menu-grid .menu-card,
+#cakes:checked ~ .menu-grid .item-cakes,
+#cupcakes:checked ~ .menu-grid .item-cupcakes,
+#cookies:checked ~ .menu-grid .item-cookies {
+    display: flex;
+    flex-direction: column;
+}
+
+/* THE GRID - 2 per row for desktop/tablet */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 10px 15% 80px;
+}
+
+.menu-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.card-content p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-weight: bold;
+    color: #4b2c20;
+    font-size: 14px;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet (2 items per row still looks good here) */
+@media (max-width: 1024px) {
+    .menu-grid {
+        padding: 10px 5% 80px;
+        gap: 20px;
+    }
+}
+
+/* Mobile (1 item per row) */
+@media (max-width: 768px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+        padding: 10px 5% 60px;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

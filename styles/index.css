@@ -1,0 +1,148 @@
+/* --- Global Resets --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+/* --- Navigation --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: FFF4F4;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5d4037;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 70vh;
+    /* This path assumes your image is inside public/images/ */
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), 
+                url('../public/images/cake-hero.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.hero-content h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: #4e342e;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin: 15px 0 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #fff;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- Specialties Section --- */
+.specialties {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #fff5f8;
+    padding: 40px 20px;
+    border-radius: 15px;
+    flex: 1;
+    max-width: 350px;
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* --- Footer --- */
+.main-footer {
+    text-align: center;
+    padding: 40px;
+    background: #fff9fa;
+    font-size: 13px;
+    color: #888;
+}
+
+/* --- Responsive (Media Queries) --- */
+
+/* Tablet & Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        margin: 5px 10px;
+    }
+
+    .card-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .hero {
+        text-align: center;
+        justify-content: center;
+    }
+}
