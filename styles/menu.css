@@ -14,15 +14,31 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
-    background-color: #fff;
+    padding: 20px 8%;
+    background-color: #FFFFFF;
 }
 
-.logo { font-size: 24px; font-weight: bold; color: #5a3d3d; }
-.nav-links { display: flex; list-style: none; }
-.nav-links li { margin-left: 20px; }
-.nav-links a { text-decoration: none; color: #333; font-size: 14px; }
-.active { color: #d63384; font-weight: bold; }
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5d4037;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.active { color: #4e2121; font-weight: bold; }
 
 /* Banner */
 .menu-banner {
