@@ -61,6 +61,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-top: 70px;
 }
 
 .hero h2 {
