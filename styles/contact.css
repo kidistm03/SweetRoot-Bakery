@@ -1,49 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Poppins:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Poppins:wght@400;500;600&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
 }
 
 body {
-    background-color: #fff4fa;
-    color: #4a3728;
-    line-height: 1.6;
+  background-color: #fff4fa;
+  color: #4a3728;
+  line-height: 1.6;
 }
 
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: #ffffff;
+  position: fixed; /* or position: sticky; */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #5d4037;
+  font-size: 24px;
+  font-weight: bold;
+  color: #5d4037;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 .nav-links li {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
 }
-.active { color: #4e2121; font-weight: bold; }
+.active {
+  color: #4e2121;
+  font-weight: bold;
+}
 
 .contact-section {
   display: flex;
@@ -65,56 +71,51 @@ body {
 
 .contact-text h2 {
   margin-bottom: 20px;
-  font-family: 'Irish Grover',cursive;
+  font-family: "Irish Grover", cursive;
 }
 
 .contact-text p {
   line-height: 1.5;
-  font-family: 'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-form{
-    text-align: center;
-    font-family: 'Poppins',sans-serif;
-    
+form {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
-input{
-   background-color: #EFCFC7;
-    border: 5px solid #FFF4F4;
-    padding: 8px 12px;
-    border-radius: 6px;
+input {
+  background-color: #efcfc7;
+  border: 5px solid #fff4f4;
+  padding: 8px 12px;
+  border-radius: 6px;
 }
-.bottom-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 80px;
-
+.bottom-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 80px;
 }
-.faq{
-    width: 60%;
-    margin-left: 30px;
-
+.faq {
+  width: 60%;
+  margin-left: 30px;
 }
-.contact{
-    width: 15%;
-    margin-top: 70px;
-    display: flex;         
-    flex-direction: column;
-
+.contact {
+  width: 15%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
 }
 footer {
   background-color: #fff;
   padding: 40px 60px;
-   width: 100%;
-   box-sizing: border-box;
-   
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .footer {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  gap:275px;
+  gap: 275px;
 }
 
 .footer-left,
@@ -173,7 +174,7 @@ footer {
 
 .footer-icons {
   display: flex;
-  flex-direction: row;   /* important */
+  flex-direction: row; /* important */
   gap: 16px;
   margin-top: 10px;
 }
@@ -186,32 +187,28 @@ footer {
   padding: 4px;
 }
 
-  hr {
+hr {
   border: none;
-  border-top: 2px solid #F7A4A4;
+  border-top: 2px solid #f7a4a4;
   width: 100%;
   margin: 30px 0;
   display: block;
 }
 
 @media (max-width: 1024px) {
-    .menu-grid {
-        padding: 10px 5% 80px;
-        gap: 20px;
-    }
+  .menu-grid {
+    padding: 10px 5% 80px;
+    gap: 20px;
+  }
 }
-
 
 @media (max-width: 768px) {
-    .menu-grid {
-        grid-template-columns: 1fr;
-        padding: 10px 5% 60px;
-    }
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .menu-grid {
+    grid-template-columns: 1fr;
+    padding: 10px 5% 60px;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
-
-
-
