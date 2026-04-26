@@ -62,8 +62,8 @@ body {
 }
 
 .story-image img {
-    width: 100%;
-    max-width: 450px;
+    width: 250%;
+    max-width: 1450px;
     border-radius: 15px;
     box-shadow: 10px 10px 0px #f8d7da;
 }
