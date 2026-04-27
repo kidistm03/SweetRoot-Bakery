@@ -51,6 +51,45 @@ body {
   color: #4e2121;
   font-weight: bold;
 }
+#menu-bar {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #5d4037;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; 
+    }
+
+    .nav-links {
+        display: none; 
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 2px solid #e6a8b6;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    
+    #menu-bar:checked ~ .nav-links {
+        display: flex;
+    }
+}
+
 .contact-section {
   display: flex;
   align-items: center;

@@ -1,236 +1,303 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu - SweetRoot</title>
-    <link rel="stylesheet" href="../styles/menu.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../styles/menu.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">🍰 SweetRoot</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="menu.html" class="active">Menu</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="order.html">Order</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">🍰 SweetRoot</div>
+
+        <input type="checkbox" id="menu-bar" />
+        <label for="menu-bar" class="hamburger">☰</label>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html" class="active">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="menu-banner">
-        <h1>Our Menu</h1>
-        <p>Handcrafted treats made with organic ingredients</p>
+      <h1>Our Menu</h1>
+      <p>Handcrafted treats made with organic ingredients</p>
     </section>
 
-    <input type="radio" name="menu-filter" id="all" checked>
-    <input type="radio" name="menu-filter" id="cakes">
-    <input type="radio" name="menu-filter" id="cupcakes">
-    <input type="radio" name="menu-filter" id="cookies">
+    <input type="radio" name="menu-filter" id="all" checked />
+    <input type="radio" name="menu-filter" id="cakes" />
+    <input type="radio" name="menu-filter" id="cupcakes" />
+    <input type="radio" name="menu-filter" id="cookies" />
 
     <div class="filter-container">
-        <label for="all" class="lbl-all">All Items</label>
-        <label for="cakes" class="lbl-cakes">Cakes</label>
-        <label for="cupcakes" class="lbl-cupcakes">CupCakes</label>
-        <label for="cookies" class="lbl-cookies">Cookies</label>
+      <label for="all" class="lbl-all">All Items</label>
+      <label for="cakes" class="lbl-cakes">Cakes</label>
+      <label for="cupcakes" class="lbl-cupcakes">CupCakes</label>
+      <label for="cookies" class="lbl-cookies">Cookies</label>
     </div>
 
     <main class="menu-grid">
-        
-        <div class="menu-card item-cakes">
-            <img src="../public/images/chocolate-cake.jpg" alt="Chocolate cake">
-            <div class="card-content">
-                <h3>Chocolate cake</h3>
-                <p>a rich, decadent, and deeply flavorful dessert, characterized by a soft, velvety crumb and extreme moisture</p>
-                <span class="price">1200-2000birr</span>
-            </div>
+      <div class="menu-card item-cakes">
+        <img src="../public/images/chocolate-cake.jpg" alt="Chocolate cake" />
+        <div class="card-content">
+          <h3>Chocolate cake</h3>
+          <p>
+            a rich, decadent, and deeply flavorful dessert, characterized by a
+            soft, velvety crumb and extreme moisture
+          </p>
+          <span class="price">1200-2000birr</span>
         </div>
-        <div class="menu-card item-cakes">
-            <img src="../public/images/wedding-cake.jpg" alt="wedding cake">
-            <div class="card-content">
-                <h3>wedding cake</h3>
-                <p>decorated, typically tiered, centerpiece dessert that symbolizes celebration</p>
-                <span class="price">3500-5000birr</span>
-            </div>
+      </div>
+      <div class="menu-card item-cakes">
+        <img src="../public/images/wedding-cake.jpg" alt="wedding cake" />
+        <div class="card-content">
+          <h3>wedding cake</h3>
+          <p>
+            decorated, typically tiered, centerpiece dessert that symbolizes
+            celebration
+          </p>
+          <span class="price">3500-5000birr</span>
         </div>
-        <div class="menu-card item-cakes">
-            <img src="../public/images/vanilla-cake.jpg" alt="Classic Vanilla Cake">
-            <div class="card-content">
-                <h3>Classic Vanilla Cake</h3>
-                <p>light-crumbed dessert with a rich buttery flavor and a warm, aromatic vanilla scent</p>
-                <span class="price">1200-2000birr</span>
-            </div>
+      </div>
+      <div class="menu-card item-cakes">
+        <img
+          src="../public/images/vanilla-cake.jpg"
+          alt="Classic Vanilla Cake"
+        />
+        <div class="card-content">
+          <h3>Classic Vanilla Cake</h3>
+          <p>
+            light-crumbed dessert with a rich buttery flavor and a warm,
+            aromatic vanilla scent
+          </p>
+          <span class="price">1200-2000birr</span>
         </div>
-        <div class="menu-card item-cakes">
-            <img src="../public/images/strawberry-cake.jpg" alt="Strawberry Cake">
-            <div class="card-content">
-                <h3>Strawberry Cake</h3>
-                <p>layers of real strawberry-flavored cake and a strawberry cream cheese frosting</p>
-                <span class="price">1200-2000birr</span>
-            </div>
+      </div>
+      <div class="menu-card item-cakes">
+        <img src="../public/images/strawberry-cake.jpg" alt="Strawberry Cake" />
+        <div class="card-content">
+          <h3>Strawberry Cake</h3>
+          <p>
+            layers of real strawberry-flavored cake and a strawberry cream
+            cheese frosting
+          </p>
+          <span class="price">1200-2000birr</span>
         </div>
-        <div class="menu-card item-cakes">
-            <img src="../public/images/banana-cake.jpg" alt="Banana Cake">
-            <div class="card-content">
-                <h3>Banana Cake</h3>
-                <p>soft, buttery, and ultra-moist with rich banana flavor and cream cheese frosting</p>
-                <span class="price">1000-1500birr</span>
-            </div>
+      </div>
+      <div class="menu-card item-cakes">
+        <img src="../public/images/banana-cake.jpg" alt="Banana Cake" />
+        <div class="card-content">
+          <h3>Banana Cake</h3>
+          <p>
+            soft, buttery, and ultra-moist with rich banana flavor and cream
+            cheese frosting
+          </p>
+          <span class="price">1000-1500birr</span>
         </div>
-        <div class="menu-card item-cakes">
-            <img src="../public/images/tiramisu-cake.jpg" alt="Tiramisu Cake">
-            <div class="card-content">
-                <h3>Tiramisu Cake</h3>
-                <p>coffee soaked vanilla cake marbled with espresso cake, topped with homemade mascarpone cream</p>
-                <span class="price">400-500birr</span>
-            </div>
+      </div>
+      <div class="menu-card item-cakes">
+        <img src="../public/images/tiramisu-cake.jpg" alt="Tiramisu Cake" />
+        <div class="card-content">
+          <h3>Tiramisu Cake</h3>
+          <p>
+            coffee soaked vanilla cake marbled with espresso cake, topped with
+            homemade mascarpone cream
+          </p>
+          <span class="price">400-500birr</span>
         </div>
+      </div>
 
-        <div class="menu-card item-cupcakes">
-            <img src="../public/images/strawberry-cupcake.jpg" alt="Strawberry Cupcake">
-            <div class="card-content">
-                <h3>Strawberry Cupcake</h3>
-                <p>layers of real strawberry-flavored cake and a strawberry cream cheese frosting</p>
-                <span class="price">200-300birr</span>
-            </div>
+      <div class="menu-card item-cupcakes">
+        <img
+          src="../public/images/strawberry-cupcake.jpg"
+          alt="Strawberry Cupcake"
+        />
+        <div class="card-content">
+          <h3>Strawberry Cupcake</h3>
+          <p>
+            layers of real strawberry-flavored cake and a strawberry cream
+            cheese frosting
+          </p>
+          <span class="price">200-300birr</span>
         </div>
-        <div class="menu-card item-cupcakes">
-            <img src="../public/images/carrot-cupcake.jpg" alt="carrot Cupcake">
-            <div class="card-content">
-                <h3>carrot Cupcake</h3>
-                <p>Soft, fluffy, and moist carrot cake cupcakes! Made completely from scratch with real grated carrots</p>
-                <span class="price">200-300birr</span>
-            </div>
+      </div>
+      <div class="menu-card item-cupcakes">
+        <img src="../public/images/carrot-cupcake.jpg" alt="carrot Cupcake" />
+        <div class="card-content">
+          <h3>carrot Cupcake</h3>
+          <p>
+            Soft, fluffy, and moist carrot cake cupcakes! Made completely from
+            scratch with real grated carrots
+          </p>
+          <span class="price">200-300birr</span>
         </div>
-        <div class="menu-card item-cupcakes">
-            <img src="../public/images/caramel-cupcake.jpg" alt="Caramel Cupcake">
-            <div class="card-content">
-                <h3>Caramel Cupcake</h3>
-                <p>filled with buttery caramel, frosted with caramel buttercream, and drizzled with gooey caramel</p>
-                <span class="price">200-300birr</span>
-            </div>
+      </div>
+      <div class="menu-card item-cupcakes">
+        <img src="../public/images/caramel-cupcake.jpg" alt="Caramel Cupcake" />
+        <div class="card-content">
+          <h3>Caramel Cupcake</h3>
+          <p>
+            filled with buttery caramel, frosted with caramel buttercream, and
+            drizzled with gooey caramel
+          </p>
+          <span class="price">200-300birr</span>
         </div>
-        <div class="menu-card item-cupcakes">
-            <img src="../public/images/oreo-cupcake.jpg" alt="Oreo Cupcake">
-            <div class="card-content">
-                <h3>Oreo Cupcake</h3>
-                <p>soft and fluffy cookies & cream cupcakes with chopped Oreos and a creamy</p>
-                <span class="price">200-300birr</span>
-            </div>
+      </div>
+      <div class="menu-card item-cupcakes">
+        <img src="../public/images/oreo-cupcake.jpg" alt="Oreo Cupcake" />
+        <div class="card-content">
+          <h3>Oreo Cupcake</h3>
+          <p>
+            soft and fluffy cookies & cream cupcakes with chopped Oreos and a
+            creamy
+          </p>
+          <span class="price">200-300birr</span>
         </div>
-        <div class="menu-card item-cupcakes">
-            <img src="../public/images/chocolate-cupcake.jpg" alt="Chocolate Cupcake">
-            <div class="card-content">
-                <h3>Chocolate Cupcake</h3>
-                <p>super moist chocolate cupcakes pack TONS of chocolate flavor in each cupcake wrapper</p>
-                <span class="price">200-300birr</span>
-            </div>
+      </div>
+      <div class="menu-card item-cupcakes">
+        <img
+          src="../public/images/chocolate-cupcake.jpg"
+          alt="Chocolate Cupcake"
+        />
+        <div class="card-content">
+          <h3>Chocolate Cupcake</h3>
+          <p>
+            super moist chocolate cupcakes pack TONS of chocolate flavor in each
+            cupcake wrapper
+          </p>
+          <span class="price">200-300birr</span>
         </div>
-        <div class="menu-card item-cupcakes">
-            <img src="../public/images/vanilla-cupcake.jpg" alt="Vanilla Cupcake">
-            <div class="card-content">
-                <h3>Vanilla Cupcake</h3>
-                <p>moist vanilla cupcake recipe yields soft, fluffy cupcakes bursting with flavor</p>
-                <span class="price">200-300birr</span>
-            </div>
+      </div>
+      <div class="menu-card item-cupcakes">
+        <img src="../public/images/vanilla-cupcake.jpg" alt="Vanilla Cupcake" />
+        <div class="card-content">
+          <h3>Vanilla Cupcake</h3>
+          <p>
+            moist vanilla cupcake recipe yields soft, fluffy cupcakes bursting
+            with flavor
+          </p>
+          <span class="price">200-300birr</span>
         </div>
+      </div>
 
-        <div class="menu-card item-cookies">
-            <img src="../public/images/molasses-cookies.jpg" alt="Molasses Cookies">
-            <div class="card-content">
-                <h3>Molasses Cookies</h3>
-                <p>soft molasses cookies with crackly tops are super chewy and perfectly spiced</p>
-                <span class="price">1000birr per kilo</span>
-            </div>
+      <div class="menu-card item-cookies">
+        <img
+          src="../public/images/molasses-cookies.jpg"
+          alt="Molasses Cookies"
+        />
+        <div class="card-content">
+          <h3>Molasses Cookies</h3>
+          <p>
+            soft molasses cookies with crackly tops are super chewy and
+            perfectly spiced
+          </p>
+          <span class="price">1000birr per kilo</span>
         </div>
-        <div class="menu-card item-cookies">
-            <img src="../public/images/almond-cookies.jpg" alt="Almond cookies">
-            <div class="card-content">
-                <h3>Almond cookies</h3>
-                <p>frangipane centers, topped with sliced almonds and a dusting of powdered sugar</p>
-                <span class="price">1000birr per kilo</span>
-            </div>
+      </div>
+      <div class="menu-card item-cookies">
+        <img src="../public/images/almond-cookies.jpg" alt="Almond cookies" />
+        <div class="card-content">
+          <h3>Almond cookies</h3>
+          <p>
+            frangipane centers, topped with sliced almonds and a dusting of
+            powdered sugar
+          </p>
+          <span class="price">1000birr per kilo</span>
         </div>
-        <div class="menu-card item-cookies">
-            <img src="../public/images/sugar-cookies.jpg" alt="Suger cookies">
-            <div class="card-content">
-                <h3>Suger cookies</h3>
-                <p>Creamed butter and sugar provide the base of the cookie dough. Flour and egg give the cookies structure</p>
-                <span class="price">1000birr per kilo</span>
-            </div>
+      </div>
+      <div class="menu-card item-cookies">
+        <img src="../public/images/sugar-cookies.jpg" alt="Suger cookies" />
+        <div class="card-content">
+          <h3>Suger cookies</h3>
+          <p>
+            Creamed butter and sugar provide the base of the cookie dough. Flour
+            and egg give the cookies structure
+          </p>
+          <span class="price">1000birr per kilo</span>
         </div>
-        <div class="menu-card item-cookies">
-            <img src="../public/images/choc-chip-cookies.jpg" alt="Chocolate Chip Cookies">
-            <div class="card-content">
-                <h3>Chocolate Chip Cookies</h3>
-                <p>super soft and chewy chocolate chip cookies</p>
-                <span class="price">1000birr per kilo</span>
-            </div>
+      </div>
+      <div class="menu-card item-cookies">
+        <img
+          src="../public/images/choc-chip-cookies.jpg"
+          alt="Chocolate Chip Cookies"
+        />
+        <div class="card-content">
+          <h3>Chocolate Chip Cookies</h3>
+          <p>super soft and chewy chocolate chip cookies</p>
+          <span class="price">1000birr per kilo</span>
         </div>
-        <div class="menu-card item-cookies">
-            <img src="../public/images/peanut-butter-cookies.jpg" alt="peanut butter cookies">
-            <div class="card-content">
-                <h3>peanut butter cookies</h3>
-                <p>peanut butter cookies recipe has the perfect balance of salty and sweet</p>
-                <span class="price">1000birr per kilo</span>
-            </div>
+      </div>
+      <div class="menu-card item-cookies">
+        <img
+          src="../public/images/peanut-butter-cookies.jpg"
+          alt="peanut butter cookies"
+        />
+        <div class="card-content">
+          <h3>peanut butter cookies</h3>
+          <p>
+            peanut butter cookies recipe has the perfect balance of salty and
+            sweet
+          </p>
+          <span class="price">1000birr per kilo</span>
         </div>
-        <div class="menu-card item-cookies">
-            <img src="../public/images/macarons.jpg" alt="Vanilla Cupcake">
-            <div class="card-content">
-                <h3>Vanilla Cupcake</h3>
-                <p>egg white, icing sugar, granulated sugar, almond meal, and often food colouring</p>
-                <span class="price">1000birr per kilo</span>
-            </div>
+      </div>
+      <div class="menu-card item-cookies">
+        <img src="../public/images/macarons.jpg" alt="Vanilla Cupcake" />
+        <div class="card-content">
+          <h3>Vanilla Cupcake</h3>
+          <p>
+            egg white, icing sugar, granulated sugar, almond meal, and often
+            food colouring
+          </p>
+          <span class="price">1000birr per kilo</span>
         </div>
-
+      </div>
     </main>
 
     <footer>
-  <div class="footer">
+      <div class="footer">
+        <div class="footer-left">
+          <div class="brand">
+            <img src="../public/images/image 1.png " alt="SweetRoot logo" />
+            <h5>SweetRoot</h5>
+          </div>
+          <p>Baked with love, crafted for your special moment</p>
+        </div>
 
-    <div class="footer-left">
-      <div class="brand">
-        <img src="../public/images/image 1.png " alt="SweetRoot logo">
-        <h5>SweetRoot</h5>
+        <div class="footer-middle">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+          <a href="order.html">Order</a>
+        </div>
+
+        <div class="footer-right">
+          <h4>contact</h4>
+          <div class="footer-icons">
+            <a href="https://instagram.com/sweetroot.bakery" target="_blank">
+              <img src="../public/icons/Rectangle 11.png" alt="Instagram" />
+            </a>
+
+            <a href="mailto:sweetrootbakery@gmail.com">
+              <img src="../public/icons/Rectangle 12.png " alt="Email" />
+            </a>
+
+            <a href="tel:+251912345678">
+              <img src="../public/icons/Rectangle 13.png " alt="Phone" />
+            </a>
+          </div>
+        </div>
       </div>
-      <p>Baked with love, crafted for your special moment</p>
-    </div>
-
-    <div class="footer-middle">
-      <h4>Quick Links</h4>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="menu.html">Menu</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-      <a href="order.html">Order</a>
-    </div>
-
-    <div class="footer-right">
-      <h4>contact</h4>
-      <div class="footer-icons">
-        <a href="https://instagram.com/sweetroot.bakery" target="_blank">
-          <img src="../public/icons/Rectangle 11.png" alt="Instagram">
-        </a>
-
-        <a href="mailto:sweetrootbakery@gmail.com">
-          <img src="../public/icons/Rectangle 12.png " alt="Email">
-        </a>
-
-        <a href="tel:+251912345678">
-          <img src="../public/icons/Rectangle 13.png " alt="Phone">
-        </a>
-      </div>
-    </div>
-
-  </div>
-  <p>© 2026 SweetRoot Bakery. All rights reserved.</p>
-</footer>
-
-</body>
+      <p>© 2026 SweetRoot Bakery. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
